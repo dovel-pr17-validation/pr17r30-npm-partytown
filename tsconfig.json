@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "target": "ES2018",
+    "module": "ES2020",
+    "lib": ["es2020", "DOM", "WebWorker"],
+    "strict": true,
+    "verbatimModuleSyntax": true,
+    "esModuleInterop": true,
+    "moduleResolution": "bundler",
+    "outDir": "tsc",
+    "declaration": true,
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "jsx": "react",
+    "paths": {
+      "@qwik.dev/partytown/integration": ["./src/integration/index.ts"],
+      "@qwik.dev/partytown/services": ["./src/integration/services.ts"],
+      "react": ["./node_modules/react"]
+    }
+  },
+  "include": ["src", "scripts", "tests/unit"]
+}
